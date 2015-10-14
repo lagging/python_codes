@@ -1,0 +1,4 @@
+1. download go version go1.5.1 linux/amd64 from      https://golang.org/doc/install?download=go1.5.1.linux-amd64.tar.gz
+2. extract in /usr/local/go
+3. $ mkdir $HOME/work
+4. $ export GOPATH=$HOME/work

@@ -1,0 +1,7 @@
+1. download go version go1.5.1 linux/amd64 from      https://golang.org/doc/install?download=go1.5.1.linux-amd64.tar.gz
+2. extract in /usr/local/go
+3. Add /usr/local/go/bin to the PATH environment variable. You can do this by adding this line to your /etc/profile (for a system-wide installation) or $HOME/.profile:
+export PATH=$PATH:/usr/local/go/bin
+4. $ mkdir $HOME/work
+5. $ export GOPATH=$HOME/work
+
