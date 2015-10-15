@@ -1,0 +1,27 @@
+1)http://get.influxdb.org/telegraf/telegraf_0.1.9_amd64.deb
+
+2)sudo dpkg -i  telegraf_0.1.9_amd64.deb
+
+3)#conf file is in /etc/opt/telegraf/telegraf.conf
+
+4)#note: to check conf file configuration for rabbit mq 
+
+        /opt/telegraf/telegraf  -usage rabbitmq 
+5)
+
+###############################################################################
+#                                  PLUGINS                                    #
+###############################################################################
+
+# Read metrics about swap memory usage
+#[swap]
+	# no configuration
+
+# Read metrics about system load & uptime
+#[system]
+	# no configuration
+[mysql]
+      servers = ["grafana:Snapdeal@tcp(10.20.58.90:3306)/"]
+[elasticsearch]
+      servers = ["http://172.16.32.11:9200/"]
+      local=true
